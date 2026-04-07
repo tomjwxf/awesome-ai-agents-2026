@@ -454,6 +454,7 @@
 | [OpenAI Function Calling](https://platform.openai.com/docs/guides/function-calling) | OpenAI native tool-use. JSON schema. |
 | [Tool Use (Anthropic)](https://docs.anthropic.com/en/docs/build-with-claude/tool-use) | Claude native tool-use. Structured JSON. |
 | [OpenAPI](https://github.com/OAI/OpenAPI-Specification) | Industry-standard API spec. Foundation for agent tools. |
+| [Signed Receipts (IETF Draft)](https://datatracker.ietf.org/doc/draft-farley-acta-signed-receipts/) | Ed25519-signed receipts for agent tool calls. JCS canonicalization (RFC 8785). Offline verifiable. 4 independent implementations interop at exit 0. |
 | [HCS (Hashgraph Consensus Service)](https://hol.org) | Hedera open standards for agent identity (HCS-14 UAIDs), trustless P2P communication (HCS-10), and cross-protocol bridging. 187K+ verified agents. |
 
 ### Protocol Tooling
@@ -522,6 +523,7 @@
 | [NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails) | NVIDIA. Programmable conversation guardrails. |
 | [LLM Guard](https://github.com/protectai/llm-guard) | Security toolkit. Input/output scanning. |
 | [Rebuff](https://github.com/protectai/rebuff) | Prompt injection detection. |
+| [protect-mcp](https://github.com/scopeblind/scopeblind-gateway) | MCP gateway with Cedar WASM policy engine + Ed25519 receipt signing. Every tool call is policy-evaluated and cryptographically signed. MIT. [npm](https://npmjs.com/package/protect-mcp), [IETF Draft](https://datatracker.ietf.org/doc/draft-farley-acta-signed-receipts/). |
 | [Lakera Guard](https://lakera.ai) | Real-time protection. Prompt injection, data leakage, toxicity. |
 | [OWASP Top 10 for Agentic Apps](https://owasp.org) | ⭐ **2026 Framework** Goal hijacking, tool misuse, cascading failure mitigations. |
 
@@ -537,6 +539,8 @@
 | [IBM watsonx.governance](https://ibm.com/watsonx) | Enterprise AI risk, compliance, and model monitoring. |
 | [OneTrust AI Governance](https://onetrust.com) | Risk classification, consent, and compliance workflows. |
 | [Microsoft Agent Governance Toolkit](https://microsoft.com) | Runtime policy enforcement and guardrails for Azure agents. |
+| [ScopeBlind / Veritas Acta](https://scopeblind.com) | Privacy-preserving compliance infrastructure. Cedar policies as machine-enforceable IMAs, Ed25519 receipt chains for tamper-evident audit trails, VOPRF for issuer-blind verification. Two IETF Internet-Drafts ([receipts](https://datatracker.ietf.org/doc/draft-farley-acta-signed-receipts/), [knowledge units](https://datatracker.ietf.org/doc/draft-farley-acta-knowledge-units/)). Integrated into Microsoft AGT ([PR #667](https://github.com/microsoft/agent-governance-toolkit/pull/667)). |
+| [@veritasacta/verify](https://npmjs.com/package/@veritasacta/verify) | Offline receipt verifier. Ed25519 + JCS (RFC 8785). 3-way exit codes (valid/invalid/error). Apache-2.0. Zero dependencies. |
 | [Bifrost](https://bifrost.ai) | Real-time security enforcement in agent pipelines. |
 | [AuditOne](https://auditone.io) | Automated risk assessments and audit-ready documentation. |
 | [EU AI Act (Official)](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai) | Official EU AI regulatory framework. Risk tiers: Unacceptable, High-Risk, Limited, Minimal. |
