@@ -454,7 +454,7 @@
 | [OpenAI Function Calling](https://platform.openai.com/docs/guides/function-calling) | OpenAI native tool-use. JSON schema. |
 | [Tool Use (Anthropic)](https://docs.anthropic.com/en/docs/build-with-claude/tool-use) | Claude native tool-use. Structured JSON. |
 | [OpenAPI](https://github.com/OAI/OpenAPI-Specification) | Industry-standard API spec. Foundation for agent tools. |
-| [Signed Receipts (IETF Draft)](https://datatracker.ietf.org/doc/draft-farley-acta-signed-receipts/) | Ed25519-signed receipts for agent tool calls. JCS canonicalization (RFC 8785). Offline verifiable. 4 independent implementations interop at exit 0. |
+| [Signed Receipts (IETF Draft)](https://datatracker.ietf.org/doc/draft-farley-acta-signed-receipts/) | Ed25519-signed receipts for agent tool calls. JCS canonicalization (RFC 8785). Offline verifiable. |
 | [HCS (Hashgraph Consensus Service)](https://hol.org) | Hedera open standards for agent identity (HCS-14 UAIDs), trustless P2P communication (HCS-10), and cross-protocol bridging. 187K+ verified agents. |
 
 ### Protocol Tooling
